@@ -1,4 +1,4 @@
-title: TODO
+title: Les web apps multi écran, c'est pas sec... mais on s'est jeté à l'eau
 class: animation-fade
 layout: true
 
@@ -42,12 +42,12 @@ Vanilla HTML/JS/CSSx
 
 ---
 
-class: left, middle, hide-handle, impact
-<!-- background-image: url(images/love.jpg) -->
+class: left, hide-handle
+background-image: url(images/dive.jpg)
 
-.title-new[
-## .large.alt-text[blabla]
-# .light-text.larger[Foldable]
+.title[
+# .large.light-text[Les web apps multi-écrans]
+## C'est pas sec... mais on s'est jeté à l'eau!
 ]
 
 .full-layer.who.text-right.small.middle.light-text[
@@ -64,6 +64,7 @@ Commentaire
 
 ---
 
+class: center, middle
 # Who are we?
 
 .table.row.middle.center[
@@ -85,9 +86,7 @@ Commentaire
 ---
 
 class: impact
-## .large[One upon a time...]
-
-<!-- TODO: use book like font -->
+## .big.book[Once upon a time...]
 
 ---
 
@@ -100,7 +99,7 @@ background-image: url(./images/web-before.jpg)
 ---
 
 class: impact
-## .large[Then came new devices.]
+## .large.book[Then came new devices...]
 
 ---
 
@@ -114,13 +113,15 @@ background-image: url(./images/web-after.jpg)
 ---
 
 class: impact
-## .large[Someone had a new idea.]
+## .large.book[And someone had an idea.]
 
 ---
 
-class: big-text, middle, center
+class: middle, center
+.script.big-text[
 .quote[
-> Your web apps shall be responsive!
+> .book.small[Your web apps shall be responsive!]
+]
 ]
 
 ???
@@ -129,12 +130,12 @@ class: big-text, middle, center
 ---
 
 class: impact
-## .large[Responsive design was born.]
+## .large.book[Responsive design was born.]
 
 ---
 
 class: impact
-## .large[But something wasn't right.]
+## .large.book[But something wasn't right!]
 
 ---
 
@@ -144,7 +145,7 @@ background-image: url(./images/desktop-first.png)
 ---
 
 class: impact
-## .large[Someone else had *another* idea.]
+## .large.book[Someone else had *another* idea.]
 
 ---
 
@@ -156,7 +157,7 @@ background-image: url(./images/drake-mobile.png)
 ---
 
 class: impact
-## .large[Then came new devices.]
+## .large.book[Then came new devices.]
 
 ---
 
@@ -169,14 +170,14 @@ class: impact
 
 .row.table.middle[
 .col-1[
-  .big[.big[.big[(]]]
+  .big[.big[.big.book[(]]]
 ]
 .col-10[
-## .large[Actually, this a bit wrong.]
-## .small[This one came even before the mobile web.]
+## .book.bit-smaller[Actually, this a bit wrong.]
+## .small.book[This one came even before the mobile web.]
 ]
 .col-1[
-  .big[.big[.big[)]]]
+  .big[.big[.big.book[)]]]
 ]
 ]
 
@@ -206,7 +207,7 @@ background-image: url(./images/new-devices-dual.jpg)
 ---
 
 class: impact
-## .large[What if...]
+## .large.book[What if...]
 
 ---
 

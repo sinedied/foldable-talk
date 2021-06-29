@@ -6,6 +6,40 @@ layout: true
   @sinedied | @olivierleplus
 ]
 
+<!--
+
+# Historique(s) 5min - Yohan
+- Web/RD + GameWatch/Nintendo DS
+* From desktop first to mobile first
+* demain? foldavle first?
+
+# Etat de l'art: c'est pas sec 5min - Olivier
+* Window Segment + CSS primitives
+* Device Posture
++ question dev
+
+# Demo: plouf 10min - Olivier
+Vanilla HTML/JS/CSSx
+
+# UI/patterns 5min / tous les 2 / images
+* discussion? qu'est ce que vous avez en tete?
+ * list/detail
+ * 1 ecran a la fois
+ * twitch + comments
+ * jeux videos/MK/bataille navale
++ question dev
+
+# Comment on dev? 10min - Yohan
+- Tools/emulateurs + SETUP EMULATOR
+- Polyfills / CS JSS
+- Problemes
++ question dev
+
+# NGX foldable/React 10min - Yohan
+- Demo gallery app
+
+-->
+
 ---
 
 class: left, middle, hide-handle, impact
@@ -50,55 +84,172 @@ Commentaire
 
 ---
 
-class: center, middle
+class: impact
+## .large[One upon a time...]
 
-# Making apps
-<div style="height: 1em"></div>
-
-???
-What means do we have to make apps today?
-
---
-.w-20.responsive.top.margin-right[
-  ### Web
-  ![](images/web.png)
-]
---
-.w-20.responsive.top.margin-right[
-  ### Native
-  ![](images/native.png)
-]
---
-.w-20.responsive.top[
-  ### Hybrid
-  <div style="height: 1em"></div>
-  .w-30.responsive[![](images/cordova.png)]
-  .w-30.responsive[![](images/capacitor.png)]
-  .w-30.responsive[![](images/electron.png)]
-  <br>
-  .w-30.responsive[![](images/nativescript.png)]
-  .w-30.responsive[![](images/react.png)]
-  .w-30.responsive[![](images/flutter.png)]
-]
-
-???
-
-Usually the tech is chosen depending on multiple factors.
-
---
-
-### .alt-text.large[Cost vs Performance vs Reach]
---
-.alt-text.large[ ?]
+<!-- TODO: use book like font -->
 
 ---
 
-# Slide
+class: contain
+background-image: url(./images/web-before.jpg)
 
-- 1
-- 2
-- 3
+???
+~ 1960-2000
 
+---
+
+class: impact
+## .large[Then came new devices.]
+
+---
+
+class: contain, hide-handle
+background-image: url(./images/web-after.jpg)
+
+???
+- 2007 Iphone
+- 2008 Android
+
+---
+
+class: impact
+## .large[Someone had a new idea.]
+
+---
+
+class: big-text, middle, center
+.quote[
+> Your web apps shall be responsive!
+]
+
+???
+2010
+
+---
+
+class: impact
+## .large[Responsive design was born.]
+
+---
+
+class: impact
+## .large[But something wasn't right.]
+
+---
+
+class: contain
+background-image: url(./images/desktop-first.png)
+
+---
+
+class: impact
+## .large[Someone else had *another* idea.]
+
+---
+
+background-image: url(./images/drake-mobile.png)
+
+???
+2011
+
+---
+
+class: impact
+## .large[Then came new devices.]
+
+---
+
+class: contain
+background-image: url(./images/ds-fat.jpg)
+
+---
+
+class: impact
+
+.row.table.middle[
+.col-1[
+  .big[.big[.big[(]]]
+]
+.col-10[
+## .large[Actually, this a bit wrong.]
+## .small[This one came even before the mobile web.]
+]
+.col-1[
+  .big[.big[.big[)]]]
+]
+]
+
+???
+NDS: 2004
+
+---
+
+class: contain
+background-image: url(./images/3ds.jpg)
+
+???
+3DS: 2010, has web browser!
+
+---
+
+class: contain
+background-image: url(./images/duo.jpg)
+
+???
+2020
+
+---
+
+background-image: url(./images/new-devices-dual.jpg)
+
+---
+
+class: impact
+## .large[What if...]
+
+---
+
+class: contain, dark, hide-handle
+background-image: url(./images/dual-first.jpg)
+
+---
+
+class: impact
+## .larger[What about UI/UX?]
+
+---
+
+class: middle, center
+# Design patterns? 🤔
+
+???
+Quelles sont vos idées?
+
+---
+
+# List / details
+
+---
+
+# Visualize + interact
+
+- 1 screen to view content
+- 1 screen to interact with it
+
+Twitch + comments, keyboard...
+
+---
+
+# Alternate view
+
+Batteleship (Mine+yours), Mario kart (main+map)
+
+---
+
+# Split interaction
+
+2 DJ mixers
 
 
 ---

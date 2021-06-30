@@ -329,7 +329,7 @@ class: impact
 ---
 
 # Enable browser dual-screen emulation
-### https://aka.ms/foldable/dev-setup
+### [aka.ms/foldable/dev-setup](https://aka.ms/foldable/dev-setup)
 
 1. `chrome://flags` or `edge://flags`
 2. Enable **Experimental Web Platform features**
@@ -343,7 +343,7 @@ class: impact
 ---
 
 # Android Surface Duo emulator
-### https://aka.ms/foldable/dev-setup
+### [aka.ms/foldable/dev-setup](https://aka.ms/foldable/dev-setup)
 
 .center[
   .w-50.responsive[![](./images/duo-emu.png)]
@@ -359,6 +359,25 @@ class: impact
 
 class: contain, small-handle
 background-image: url(./images/polyfills.jpg)
+
+---
+
+class: center
+# Current status
+
+<br>
+
+| Feature | Implementation | Polyfill
+|----------------|:-----------------:|:---:|
+| CSS Spanning | ✅ 🧪 | ✅ |
+| Window Segments | ✅ 🧪 | ✅ |
+| Device Posture | ⛔ | ✅ ✋ |
+| CSS Viewport Window Segments | ⛔ | ⛔ |
+
+---
+
+class: impact
+## .large[What about some code?]
 
 ---
 

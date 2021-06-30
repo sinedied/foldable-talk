@@ -130,7 +130,7 @@ class: middle, center
 ---
 
 class: impact
-## .large.book[Responsive design was born.]
+## .bit-smaller.book[Responsive web design was born.]
 
 ---
 
@@ -162,6 +162,20 @@ class: impact
 ---
 
 class: contain
+background-image: url(./images/gw.jpg)
+
+---
+
+class: impact
+## .large.book[Not this one.]
+## .small.book[( It's older than the web! )]
+
+???
+1982
+
+---
+
+class: contain
 background-image: url(./images/ds-fat.jpg)
 
 ---
@@ -173,8 +187,8 @@ class: impact
   .big[.big[.big.book[(]]]
 ]
 .col-10[
-## .book.bit-smaller[Actually, this a bit wrong.]
-## .small.book[This one came even before the mobile web.]
+## .book.bit-smaller[Still a bit wrong.]
+## .small.book[This one came before the mobile web.]
 ]
 .col-1[
   .big[.big[.big.book[)]]]
@@ -213,6 +227,41 @@ class: impact
 
 class: contain, dark, hide-handle
 background-image: url(./images/dual-first.jpg)
+
+---
+
+class: impact
+## .big[Back to now.]
+
+---
+
+# APIs
+
+---
+
+# CSS Primitives
+### https://aka.ms/foldable/css-primitives
+
+---
+
+# Window Segments API
+### https://aka.ms/foldable/window-segments
+
+
+---
+
+# Device Posture API
+### https://w3.org/TR/device-posture/
+.small.up[
+  *Last updated: June, 3, 2021*
+]
+
+- **Device**: single-screen (foldable or not), dual-screen
+- **Posture**: no-fold, laptop, flat, tent, tablet, book
+
+.center[
+.w-40.responsive[![](./images/posture-angle.svg)]
+]
 
 ---
 
@@ -279,22 +328,12 @@ alert('Questions?');
 ---
 
 exclude: true
-class: hide-handle, dark, light-text
 
-.side-layer.right[
-  <div style="height: 5.5em"></div>
-  .w-30.responsive[![](images/bit-learning.png)]
-]
 
-# References
-- [HackerNews PWA comparison](https://hnpwa.com)
-- [PWA @ Google Developers](https://developers.google.com/web/progressive-web-apps/)
-- [PWA 101](https://www.freecodecamp.org/news/progressive-web-apps-101-the-what-why-and-how-4aa5e9065ac2/)
-- [PWA, welcome to the mobile revolution](https://www.creativebloq.com/features/pwas-welcome-to-the-mobile-revolution)
-- [PWA support & compatibility](https://medium.com/@guillaumeandre/progressive-web-app-pwa-support-et-compatibilite-manifest-39bcfc703737)
-- [The modern PWA cheat sheet (slides)](https://www.slideshare.net/firt/the-modern-pwa-cheat-sheet)
-- [PRPL pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
-- [TWA for Google Play Store](https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc)
-- https://serviceworke.rs
-- https://www.pwabuilder.com
-- https://github.com/TalAter/awesome-service-workers
+# Links
+
+- https://docs.microsoft.com/en-us/dual-screen/web/css-media-spanning
+- https://docs.microsoft.com/en-us/dual-screen/web/javascript-getwindowsegments
+- https://docs.microsoft.com/en-us/dual-screen/web/emulator-device-testing
+- https://docs.microsoft.com/en-us/dual-screen/web/desktop-developer-tools
+

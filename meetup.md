@@ -130,15 +130,16 @@ background-image: url(./images/new-devices-dual.jpg)
 
 ---
 
-class: full, middle
+class: full, middle, center, overlay-dark
 background-image: url(./images/experimental.jpg)
 
-# ⚠️ Experimental APIs
+# .large[⚠️]
+# Experimental APIs ahead
 
 ---
 
 # CSS Primitives
-### https://aka.ms/foldable/css-primitives / https://aka.ms/docs/css-primitives
+### [aka.ms/foldable/css-primitives](https://aka.ms/foldable/css-primitives)<br>[aka.ms/docs/css-primitives](https://aka.ms/docs/css-primitives)
 
 .center[
 .w-60.responsive[![](./images/spanning-media-query.svg)]
@@ -152,18 +153,17 @@ background-image: url(./images/experimental.jpg)
 .w-60.responsive[![](./images/css-env-variables.svg)]
 ]
 
-
 ---
 
 # Window Segments API
-### https://aka.ms/foldable/window-segments / https://aka.ms/docs/window-segments
+### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
 
 ```js
 const screenSegments = window.getWindowSegments();
 
 if (screenSegments.length > 1) {
   // The device is a foldable!
-  for (const i = 0; i < screenSegments.length; i++) {
+  for (let i = 0; i < screenSegments.length; i++) {
     console.log(`Screen segment ${i}:`);
     console.log('- width   : ' + screenSegments[i].width);
     console.log('- height  : ' + screenSegments[i].height);
@@ -176,23 +176,29 @@ if (screenSegments.length > 1) {
 ---
 
 # Device Posture API
-### https://w3.org/TR/device-posture/
-.small.up[
-  *Last updated: June, 3, 2021*
+### [w3.org/TR/device-posture/](https://w3.org/TR/device-posture/)
+
+.full-layer.right.space-right[
+.w-30.responsive[![](./images/posture-angle.svg)]
 ]
 
 - **Device**: single-screen (foldable or not), dual-screen
 - **Posture**: no-fold, laptop, flat, tent, tablet, book
 
 .center[
-.w-40.responsive[![](./images/posture-angle.svg)]
+.w-70.responsive[![](./images/postures.png)]
 ]
-
 
 ---
 
 class: impact, alt
 ## .large[Demos]
+
+???
+
+- ngx-foldable demo
+- gallery app
+- battleship
 
 ---
 
@@ -225,10 +231,15 @@ class: impact
 
 ---
 
-class: full, middle, right
+class: full, bottom, center
 background-image: url(./images/dive.jpg)
 
 # Let's dive in!
+
+???
+
+- ngx-foldable github page
+- Gallery app source code
 
 ---
 

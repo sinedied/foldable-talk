@@ -58,13 +58,17 @@ background-image: url(images/dive.jpg)
   Olivier Leplus
 ]
 
+.full-layer.text-left.full-bottom.stick-left.no-margin[
+  .w-40.responsive[![](./images/rivieradev.svg)]
+]
+
 ???
 
 Commentaire
 
 ---
 
-class: center, middle
+class: center, middle, hide-handle
 # Who are we?
 
 .table.row.middle.center[
@@ -231,6 +235,11 @@ background-image: url(./images/dual-first.jpg)
 ---
 
 class: impact
+## .large.book[Or not.]
+
+---
+
+class: impact
 ## .big[Back to now.]
 
 ---
@@ -262,6 +271,17 @@ class: impact
 .center[
 .w-40.responsive[![](./images/posture-angle.svg)]
 ]
+
+---
+
+class: impact, alt
+## .large[Demos]
+
+???
+- demo Olivier
+- ngx-foldable demo
+- gallery app
+- battleship
 
 ---
 
@@ -301,6 +321,56 @@ Batteleship (Mine+yours), Mario kart (main+map)
 
 2 DJ mixers
 
+---
+
+class: impact
+## .large[Setting up for development]
+
+---
+
+# Enable browser dual-screen emulation
+### https://aka.ms/foldable/dev-setup
+
+1. `chrome://flags` or `edge://flags`
+2. Enable **Experimental Web Platform features**
+3. Open dev tools settings
+4. In **Experiments** tab, tick **Emulation: Support dual screen mode**
+
+.center[
+  .w-70.responsive[![](./images/edge-flags.png)]
+]
+
+---
+
+# Android Surface Duo emulator
+### https://aka.ms/foldable/dev-setup
+
+.center[
+  .w-50.responsive[![](./images/duo-emu.png)]
+  ### ⚠️ *Highly recommended!*
+]
+
+---
+
+class: impact
+## .large[About polyfills...]
+
+---
+
+class: contain, small-handle
+background-image: url(./images/polyfills.jpg)
+
+---
+
+class: full, middle, center
+background-image: url(./images/dive2.jpg)
+
+# Let's dive in!
+
+???
+
+- ngx-foldable github page
+- Gallery app source code
 
 ---
 
@@ -310,8 +380,8 @@ class: middle, hide-handle
 ```js
 const end = {
   message: 'Thank you!',
-  slides : 'bit.ly/everypwa',
-  link   : 'aka.ms/gopwa' // Get started with PWA
+  slides : 'bit.ly/foldable-dev',
+  links  : 'aka.ms/foldable-dev'
 };
 
 alert('Questions?');
@@ -322,7 +392,7 @@ alert('Questions?');
 .right.large[
 .large.em-text[{]
 .fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
-.large.em-text[}] .e[@sinedied]<br>
+.large.em-text[}] .e[@sinedied] .em-text[|] .e[@olivierleplus]
 ]
 
 ---

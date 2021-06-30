@@ -256,10 +256,18 @@ table {
     top: auto;
     bottom: 1em;
   }
+  &.full-bottom {
+    top: auto;
+    bottom: 0.5em;
+  }
   &.full-right {
     left: auto;
     right: 0;
     padding: 2em;
+  }
+  &.stick-left {
+    left: 2em;
+    right: auto;
   }
 }
 .responsive {
@@ -832,12 +840,16 @@ hr {
 }
 
 .twitter-handle {
-  &, & p { font-size: $font-size * .8 !important; }
+  &, & p {
+    font-size: $font-size * .8 !important;
+    .small-handle & { font-size: $font-size * .6 !important; }
+  }
   position: absolute;
   bottom: 0;
   right: 1em;
   opacity: 0.6;
   .hide-handle & { display: none; }
+  
 }
 
 .who {
@@ -846,7 +858,7 @@ hr {
   top: auto;
   right: 0;
   bottom: 0;
-  background: linear-gradient(0, transparentize(#000, .5),  transparentize(#000, 1));
+  background: linear-gradient(0, transparentize(#000, .3),  transparentize(#000, 1));
   p {
     float: right;
     margin-right: 1em;

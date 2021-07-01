@@ -313,11 +313,6 @@ class: impact
   .responsive[![](./images/screens-list-2-answer.png)]
 ]
 
-<!-- ---
-
-class: impact
-## .big[It's not a foldable, it's a dual screen...] -->
-
 ---
 
 # CSS Primitives
@@ -500,11 +495,23 @@ Quelles sont vos idées?
 
 ---
 
+class: center
 # List / details
+
+.center[
+  .w-60.responsive[![](./images/list-details.png)]
+]
 
 ---
 
-# Visualize + interact
+class: center
+# Visualize / interact
+
+.center[
+  .w-35.responsive[![](./images/vis-interact.png)]
+]
+
+???
 
 - 1 screen to view content
 - 1 screen to interact with it
@@ -513,14 +520,26 @@ Twitch + comments, keyboard...
 
 ---
 
+class: center
 # Alternate view
 
+.center[
+  .w-45.responsive[![](./images/mario-3ds.jpg)]
+]
+
+???
 Batteleship (Mine+yours), Mario kart (main+map)
 
 ---
 
+class: center
 # Split interaction
 
+.center[
+  .w-60.responsive[![](./images/dj-decks.png)]
+]
+
+???
 2 DJ mixers
 
 ---

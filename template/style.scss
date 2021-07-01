@@ -377,8 +377,8 @@ table {
   .col-#{$i} {width: 100% / 12 * $i; }
 }
 
-@for $i from 1 through 10 {
-  .w-#{$i * 10} {width: 10% * $i; }
+@for $i from 1 through 20 {
+  .w-#{$i * 5} {width: 5% * $i; }
 }
 
 // Animations

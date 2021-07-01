@@ -274,7 +274,7 @@ class: middle, center
 ---
 
 class: small-handle, center
-# So, media queries it is !
+# So, media queries it is!
 
 ```css
 @media (screen-spanning: single-fold-vertical) { ... }
@@ -293,7 +293,7 @@ class: impact
 
 ---
 
-class: small-handle
+class: small-handle, center
 # Media queries forever
 
 .col-6.float-left.space-right[

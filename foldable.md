@@ -244,7 +244,78 @@ class: impact
 
 ---
 
-# APIs
+class: impact
+## .big[So, how do we do ?]
+
+---
+
+### It's just another responsive design
+
+.center[
+  .w-70.responsive[![](./images/responsive.png)]
+]
+
+---
+
+### So media queries it is !
+
+```css
+@media (spanning: single-fold-vertical) {}
+
+@media (spanning: single-fold-horizontal) {}
+
+```
+
+.center[
+  .w-60.responsive[![](./images/spanning-media-query.svg)]
+]
+
+---
+
+class: impact
+## .big[Community feedback]
+
+---
+
+TODO
+
+---
+
+class: impact
+## .big[Let's play a game]
+
+---
+
+```css
+@media(horizontal-viewport-segments: 2) {
+  body { 
+    background-color: yellow; 
+  }
+}
+```
+
+.center[
+  .w-70.responsive[![](./images/screens-list-2.png)]
+]
+
+---
+
+```css
+@media(horizontal-viewport-segments: 2) {
+  body { 
+    background-color: yellow; 
+  }
+}
+```
+
+.center[
+  .w-70.responsive[![](./images/screens-list-2-answer.png)]
+]
+
+<!-- ---
+
+class: impact
+## .big[It's not a foldable, it's a dual screen...] -->
 
 ---
 
@@ -253,9 +324,72 @@ class: impact
 
 ---
 
+# CSS Primitives
+### https://aka.ms/foldable/css-primitives
+
+.center[
+  .w-70.responsive[![](./images/css-env.png)]
+]
+
+
+---
+
 # Window Segments API
 ### https://aka.ms/foldable/window-segments
 
+```js
+const screenSegments = window.visualViewport.segments; // => null || [0,1]
+
+if( screenSegments.length > 1 ) {
+  // It's a foldable device !
+  
+
+
+
+
+}
+```
+
+---
+
+# Window Segments API
+### https://aka.ms/foldable/window-segments
+
+```js
+const screenSegments = window.visualViewport.segments; // => null || [0,1]
+
+if( screenSegments.length > 1 ) {
+  // It's a foldable device!
+
+  if (screenSegments[0].width === screenSegments[1].width) {
+    // Where the magic happens!
+  }
+
+}
+```
+
+---
+
+### window.visualViewport.segments is immutable
+```js
+
+window.addEventListener("resize") => {
+  const segments = window.visualViewport.segments;
+  console.log(segments.length);
+}
+```
+
+.center[
+  .w-90.responsive[![](./images/window-resize.png)]
+]
+
+---
+
+# A little bit of gym 🤸‍♀️
+
+.center[
+  .w-90.responsive[![](./images/postures.png)]
+]
 
 ---
 
@@ -270,6 +404,36 @@ class: impact
 
 .center[
 .w-40.responsive[![](./images/posture-angle.svg)]
+]
+
+---
+
+# Device Posture API
+
+```js
+navigator.devicePosture.addEventListener("change", () => {
+  console.log(`The current posture is: ${navigator.devicePosture.type}!`);
+})
+```
+
+---
+
+# Device Posture API
+
+```js
+navigator.devicePosture.addEventListener("change", () => {
+  console.log(`The current posture is: ${navigator.devicePosture.type}!`);
+})
+```
+
+```css
+@media (device-posture: laptop) and (spanning: single-fold-horizontal) {
+  // Where the magic happens!
+}
+```
+
+.center[
+.w-30.responsive[![](./images/posture-example-videocall.svg)]
 ]
 
 ---

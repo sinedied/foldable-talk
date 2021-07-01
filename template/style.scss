@@ -318,6 +318,7 @@ table {
 .margin-top { margin-top: .5em; }
 .margin-bottom { margin-bottom: .5em; }
 .overlay-dark { box-shadow: inset 0 0 0 9999px transparentize(#000, .5); }
+.overlay-grey { box-shadow: inset 0 0 0 9999px transparentize(#000, .6); }
 .no-wrap { pre, code { white-space: pre; } }
 .ib { display: inline-block; }
 
@@ -773,10 +774,10 @@ hr {
 }
 
 .title-new {
-  text-shadow: 0 0 .5em rgba(0,0,0,.6), 0 0 .5em rgba(0,0,0,.6);
-  background: rgba(0,0,0,.2);
+  text-shadow: 0 0 .5em rgba(0,0,0,.6);
+  // background: rgba(0,0,0,.2);
   margin: -1em -2em;
-  padding: 2em;
+  padding: 1.5em;
   h1 { font-weight: 400; }
   h1, h2 { margin: 0; }
   h2 { padding-left: 0 !important; border-left: 0 !important; }

@@ -42,6 +42,25 @@ Vanilla HTML/JS/CSSx
 
 ---
 
+exclude: true
+class: left, hide-handle, middle, overlay-grey
+background-image: url(images/duo-banner.jpg)
+
+.title-new[
+# .large.light-text[Multi-screen experiences]
+## For the mobile web
+]
+
+.full-layer.who.text-right.small.middle.light-text[
+  .ms.responsive[![](images/ms-full-logo.svg)]
+  |
+  Yohan Lasorsa
+  |
+  Olivier Leplus
+]
+
+---
+
 class: left, hide-handle
 background-image: url(images/dive.jpg)
 
@@ -61,10 +80,6 @@ background-image: url(images/dive.jpg)
 .full-layer.text-left.full-bottom.stick-left.no-margin[
   .w-40.responsive[![](./images/rivieradev.svg)]
 ]
-
-???
-
-Commentaire
 
 ---
 
@@ -240,17 +255,17 @@ class: impact
 ---
 
 class: impact
-## .big[Back to now.]
+## .large[Back to now.]
 
 ---
 
 class: impact
-## .big[So, how do we do ?]
+## .large[So, where to begin?]
 
 ---
 
 class: middle, center
-# Another responsive design target!
+# Another responsive design target?
 
 .center[
   .responsive[![](./images/responsive.png)]
@@ -460,8 +475,8 @@ navigator.devicePosture.addEventListener("change", () => {
 ```
 
 ```css
-@media (device-posture: laptop) and (spanning: single-fold-horizontal) {
-  // Where the magic happens!
+@media (device-posture: laptop) and (screen-spanning: single-fold-horizontal) {
+  /* Where the magic happens! */
 }
 ```
 

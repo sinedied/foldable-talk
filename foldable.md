@@ -273,7 +273,7 @@ class: middle, center
 
 ---
 
-class: small-handle
+class: small-handle, center
 # So, media queries it is !
 
 ```css
@@ -299,7 +299,7 @@ TODO
 ---
 
 class: impact
-## .big[Let's play a game]
+## .large[Let's play a game]
 
 ---
 

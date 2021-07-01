@@ -249,20 +249,22 @@ class: impact
 
 ---
 
-### It's just another responsive design
+class: middle, center
+# Another responsive design target!
 
 .center[
-  .w-70.responsive[![](./images/responsive.png)]
+  .responsive[![](./images/responsive.png)]
 ]
 
 ---
 
-### So media queries it is !
+class: small-handle
+# So, media queries it is !
 
 ```css
-@media (spanning: single-fold-vertical) {}
+@media (screen-spanning: single-fold-vertical) { ... }
 
-@media (spanning: single-fold-horizontal) {}
+@media (screen-spanning: single-fold-horizontal) { ... }
 
 ```
 
@@ -273,7 +275,7 @@ class: impact
 ---
 
 class: impact
-## .big[Community feedback]
+## .large[*After community feedback...*]
 
 ---
 
@@ -287,21 +289,20 @@ class: impact
 ---
 
 ```css
-@media(horizontal-viewport-segments: 2) {
+@media (horizontal-viewport-segments: 2) {
   body { 
     background-color: yellow; 
   }
 }
 ```
-
 .center[
-  .w-70.responsive[![](./images/screens-list-2.png)]
+.responsive[![](./images/screens-list-2.png)]
 ]
 
 ---
 
 ```css
-@media(horizontal-viewport-segments: 2) {
+@media (horizontal-viewport-segments: 2) {
   body { 
     background-color: yellow; 
   }
@@ -309,7 +310,7 @@ class: impact
 ```
 
 .center[
-  .w-70.responsive[![](./images/screens-list-2-answer.png)]
+  .responsive[![](./images/screens-list-2-answer.png)]
 ]
 
 <!-- ---
@@ -320,29 +321,58 @@ class: impact
 ---
 
 # CSS Primitives
-### https://aka.ms/foldable/css-primitives
+### [aka.ms/foldable/css-primitives](https://aka.ms/foldable/css-primitives)<br>[aka.ms/docs/css-primitives](https://aka.ms/docs/css-primitives)
 
----
-
-# CSS Primitives
-### https://aka.ms/foldable/css-primitives
+--
 
 .center[
   .w-70.responsive[![](./images/css-env.png)]
 ]
 
-
 ---
 
 # Window Segments API
-### https://aka.ms/foldable/window-segments
+### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
 
 ```js
-const screenSegments = window.visualViewport.segments; // => null || [0,1]
+const screenSegments = window.getWindowSegments();
+```
 
-if( screenSegments.length > 1 ) {
+--
+
+<br>
+
+.center.large[
+  👆 *But that was before...*
+]
+
+---
+
+class: impact
+## .large[*After community feedback...*]
+
+---
+
+# Visual Viewport Window Segments API
+### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+
+```js
+const screenSegments = window.visualViewport.segments;
+```
+
+---
+
+# Visual Viewport Window Segments API
+### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+
+```js
+const screenSegments = window.visualViewport.segments; // => null || DOMRect[]
+
+if (screenSegments.length > 1) {
   // It's a foldable device !
-  
+
+
+
 
 
 
@@ -352,25 +382,36 @@ if( screenSegments.length > 1 ) {
 
 ---
 
-# Window Segments API
-### https://aka.ms/foldable/window-segments
+# Visual Viewport Window Segments API
+### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
 
 ```js
-const screenSegments = window.visualViewport.segments; // => null || [0,1]
+const screenSegments = window.visualViewport.segments; // => null || DOMRect[]
 
-if( screenSegments.length > 1 ) {
-  // It's a foldable device!
-
-  if (screenSegments[0].width === screenSegments[1].width) {
-    // Where the magic happens!
+if (screenSegments.length > 1) {
+  // It's a foldable device !
+  for (let i = 0; i < screenSegments.length; i++) {
+    console.log(`Screen segment ${i}:`);
+    console.log('- width   : ' + screenSegments[i].width);
+    console.log('- height  : ' + screenSegments[i].height);
+    console.log('- x origin: ' + screenSegments[i].x);
+    console.log('- y origin: ' + screenSegments[i].y);
   }
-
 }
 ```
 
+--
+
+.full-layer.text-right.space-right[
+  <div style="height: 10em"></div>
+  .w-20.responsive[![](./images/diff-screens.png)]
+]
+
 ---
 
-### window.visualViewport.segments is immutable
+# .small[`window.visualViewport.segments` is immutable]
+
+.no-margin[
 ```js
 
 window.addEventListener("resize") => {
@@ -378,8 +419,8 @@ window.addEventListener("resize") => {
   console.log(segments.length);
 }
 ```
-
-.center[
+]
+.center.no-margin[
   .w-90.responsive[![](./images/window-resize.png)]
 ]
 
@@ -394,10 +435,7 @@ window.addEventListener("resize") => {
 ---
 
 # Device Posture API
-### https://w3.org/TR/device-posture/
-.small.up[
-  *Last updated: June, 3, 2021*
-]
+### [w3.org/TR/device-posture/](https://w3.org/TR/device-posture/)
 
 - **Device**: single-screen (foldable or not), dual-screen
 - **Posture**: no-fold, laptop, flat, tent, tablet, book

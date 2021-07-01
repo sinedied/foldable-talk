@@ -263,7 +263,6 @@ class: small-handle
 
 ```css
 @media (screen-spanning: single-fold-vertical) { ... }
-
 @media (screen-spanning: single-fold-horizontal) { ... }
 
 ```
@@ -279,7 +278,46 @@ class: impact
 
 ---
 
-TODO
+class: small-handle
+# Media queries forever
+
+.col-6.float-left.space-right[
+```css
+@media (horizontal-viewport-segments:2) 
+and 
+@media (vertical-viewport-segments:1);
+```
+
+.center[
+  .w-70.responsive[![](./images/horizontal-viewport.png)]
+]
+]
+
+.col-6.float-left[
+```css
+@media (horizontal-viewport-segments:1) 
+and 
+@media (vertical-viewport-segments:2);
+```
+
+.center[
+  .w-70.responsive[![](./images/vertical-viewport.png)]
+]
+]
+
+---
+
+class: small-handle,center
+# Are you crazy ? 😱
+```css
+@media (horizontal-viewport-segments:2) and @media (vertical-viewport-segments:2);
+```
+
+--
+  .w-30.responsive[![](./images/crazy-1.png)]
+  <br />
+--
+  .w-30.up.responsive[![](./images/crazy-2.png)]
 
 ---
 

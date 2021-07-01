@@ -104,6 +104,29 @@ class: center, middle, hide-handle
 
 ---
 
+class: center, middle, hide-handle
+# Who are we?
+
+.table.row.middle.center[
+.col-2[]
+.col-4.center[
+  .w-70.responsive.avatar[![](images/photo.jpg)]
+
+  **Yohan Lasorsa**<br>
+  .fab.fa-twitter[] .e[@sinedied]
+]
+.col-4.center[
+  .w-70.responsive.avatar[![](images/olivier.jpg)]
+
+  **Olivier Leplus**<br>
+  .fab.fa-twitter[] .e[@olivierleplus]
+]
+]
+
+.large[👉 [aka.ms/foldable-feedback](https://aka.ms/foldable-feedback) 👈]
+
+---
+
 class: impact
 ## .big.book[Once upon a time...]
 
@@ -672,9 +695,10 @@ class: middle, hide-handle
 .big-text.no-bg.baseline[
 ```js
 const end = {
-  message: 'Thank you!',
-  slides : 'bit.ly/foldable-dev',
-  links  : 'aka.ms/foldable-dev'
+  message : 'Thank you!',
+  slides  : 'bit.ly/foldable-dev',
+  links   : 'aka.ms/foldable-dev',
+  feedback: 'aka.ms/foldable-feedback'
 };
 
 alert('Questions?');

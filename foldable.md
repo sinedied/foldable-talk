@@ -643,7 +643,7 @@ class: impact
 ### [aka.ms/foldable/dev-setup](https://aka.ms/foldable/dev-setup)
 
 .center[
-  .w-50.responsive[![](./images/duo-emu.png)]
+  .w-90.responsive[![](./images/duo-emu.png)]
   ### ⚠️ *Highly recommended!*
 ]
 

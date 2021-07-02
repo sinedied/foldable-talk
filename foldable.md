@@ -62,7 +62,7 @@ background-image: url(images/duo-banner.jpg)
 ---
 
 class: left, hide-handle
-background-image: url(images/dive.jpg)
+background-image: url(images/plouf.jpg)
 
 .title[
 # .large.light-text[Les web apps multi-écrans]

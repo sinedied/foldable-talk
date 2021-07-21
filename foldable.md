@@ -581,7 +581,7 @@ class: center
 ---
 
 class: center
-# Visualize / interact
+# Companion pane
 
 .center[
   .w-35.responsive[![](./images/vis-interact.png)]
@@ -597,7 +597,7 @@ Twitch + comments, keyboard...
 ---
 
 class: center
-# Alternate view
+# Dual view
 
 .center[
   .w-45.responsive[![](./images/mario-3ds.jpg)]
@@ -609,7 +609,7 @@ Batteleship (Mine+yours), Mario kart (main+map)
 ---
 
 class: center
-# Split interaction
+# Dual view interaction
 
 .center[
   .w-60.responsive[![](./images/dj-decks.png)]

@@ -8,6 +8,19 @@ layout: true
 
 <!--
 
+Prep:
+- 1 Ecran: slides
+- 1 Ecran: browser edge avec devtools et demo foldable gallery, ngx-foldable
+  * https://sinedied.github.io/ngx-foldable/demo/
+  * https://foldable-devices.github.io/demos/battleship/build/
+  * https://foldable-devices.github.io/demos/photo-gallery/build/
+  * https://github.com/foldable-devices/demos
+  * edge://flags/#enable-experimental-web-platform-features
+  * https://sinedied.github.io/surface-duo-photo-gallery/
+  * https://github.com/sinedied/ngx-foldable
+- 1 Ecran: emulateur duo
+- 1 Ecran: VS Code avec code demo ngx-foldable gallery sur branche before
+
 Celui la c'est pour mon meetup Angular ;)
 
 # Historique(s) 2min - Yohan
@@ -39,9 +52,9 @@ background-image: url(./images/duo-banner.jpg)
 # .light-text[Angular apps for dual-screen devices]
 ## with ngx-foldable
 
-.full-layer.light-text.space-left[
+<!-- .full-layer.light-text.space-left[
   .w-10.responsive[![](./images/ng-nation.png)] Angular Nation
-]
+] -->
 
 .full-layer.who.text-right.small.middle.light-text[
   .ms.responsive[![](images/ms-full-logo.svg)]
@@ -77,9 +90,6 @@ class: middle, center, hide-handle
 ]
 
 ???
-
-ca fait plus de 10 ans que je baigne dans le monde du web...
-je ne vais pas vous refaire tout l'historique, car simplement...
 
 ---
 
@@ -130,6 +140,20 @@ background-image: url(./images/new-devices-dual.jpg)
 
 ---
 
+class: impact
+## .large[So, where to begin?]
+
+---
+
+class: middle, center
+# Another responsive design target?
+
+.center[
+  .responsive[![](./images/responsive.png)]
+]
+
+---
+
 class: full, middle, center, overlay-dark
 background-image: url(./images/experimental.jpg)
 
@@ -138,16 +162,27 @@ background-image: url(./images/experimental.jpg)
 
 ---
 
-# CSS Primitives
-### [aka.ms/foldable/css-primitives](https://aka.ms/foldable/css-primitives)<br>[aka.ms/docs/css-primitives](https://aka.ms/docs/css-primitives)
+# So, media queries it is!
+
+```css
+@media (screen-spanning: single-fold-vertical) { ... }
+@media (screen-spanning: single-fold-horizontal) { ... }
+
+```
 
 .center[
 .w-60.responsive[![](./images/spanning-media-query.svg)]
 ]
 
+.full-layer.stick-bottom.space-left[
+.small.no-margin[
+[aka.ms/foldable/css-primitives](https://aka.ms/foldable/css-primitives)<br>[aka.ms/docs/css-primitives](https://aka.ms/docs/css-primitives)
+]
+]
+
 ---
 
-# CSS Primitives
+# Environment variables
 
 .center[
 .w-60.responsive[![](./images/css-env-variables.svg)]
@@ -155,14 +190,141 @@ background-image: url(./images/experimental.jpg)
 
 ---
 
+class: middle, center
+# But... things moves fast
+
+---
+
+class: small-handle, center
+# New media queries...
+
+.col-6.float-left.space-right[
+```css
+@media (horizontal-viewport-segments:2) 
+and 
+@media (vertical-viewport-segments:1);
+```
+
+.center[
+  .w-70.responsive[![](./images/horizontal-viewport.png)]
+]
+]
+
+.col-6.float-left[
+```css
+@media (horizontal-viewport-segments:1) 
+and 
+@media (vertical-viewport-segments:2);
+```
+
+.center[
+  .w-70.responsive[![](./images/vertical-viewport.png)]
+]
+]
+
+--
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.margin-left[
+*With new env vars soon: https://github.com/w3c/csswg-drafts/pull/6474/*
+]
+]
+
+---
+
+class: small-handle,center
+# ...opening up new possibilities?
+```css
+@media (horizontal-viewport-segments:2) and @media (vertical-viewport-segments:2);
+```
+
+--
+  .w-30.responsive[![](./images/crazy-1.png)]
+  <br />
+--
+  .w-30.up.responsive[![](./images/crazy-2.png)]
+
+---
+
+class: impact
+## .large[What about the JavaScript side?]
+
+---
+
 # Window Segments API
-### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.text-left.margin-left[
+[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+]
+]
 
 ```js
 const screenSegments = window.getWindowSegments();
+```
+
+--
+
+<br>
+
+.center.large[
+  👆 *But that was before community feedback...*
+]
+
+---
+
+# Visual Viewport Window Segments API
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.text-left.margin-left[
+[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+]
+]
+
+```js
+const screenSegments = window.visualViewport.segments;
+```
+
+---
+
+# Visual Viewport Window Segments API
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.text-left.margin-left[
+[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+]
+]
+
+```js
+const screenSegments = window.visualViewport.segments; // => null || DOMRect[]
 
 if (screenSegments.length > 1) {
-  // The device is a foldable!
+  // It's a foldable device !
+
+
+
+
+
+
+
+}
+```
+
+---
+
+# Visual Viewport Window Segments API
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.text-left.margin-left[
+[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+]
+]
+
+```js
+const screenSegments = window.visualViewport.segments; // => null || DOMRect[]
+
+if (screenSegments.length > 1) {
+  // It's a foldable device !
   for (let i = 0; i < screenSegments.length; i++) {
     console.log(`Screen segment ${i}:`);
     console.log('- width   : ' + screenSegments[i].width);
@@ -172,6 +334,13 @@ if (screenSegments.length > 1) {
   }
 }
 ```
+
+--
+
+.full-layer.text-right.space-right[
+  <div style="height: 7em"></div>
+  .w-20.responsive[![](./images/diff-screens.png)]
+]
 
 ---
 
@@ -187,6 +356,36 @@ if (screenSegments.length > 1) {
 
 .center[
 .w-70.responsive[![](./images/postures.png)]
+]
+
+---
+
+# Device Posture API
+
+```js
+navigator.devicePosture.addEventListener("change", () => {
+  console.log(`The current posture is: ${navigator.devicePosture.type}!`);
+})
+```
+
+---
+
+# Device Posture API
+
+```js
+navigator.devicePosture.addEventListener("change", () => {
+  console.log(`The current posture is: ${navigator.devicePosture.type}!`);
+})
+```
+
+```css
+@media (device-posture: laptop) and (screen-spanning: single-fold-horizontal) {
+  /* Where the magic happens! */
+}
+```
+
+.center[
+.w-30.responsive[![](./images/posture-example-videocall.svg)]
 ]
 
 ---
@@ -208,7 +407,7 @@ class: impact
 ---
 
 # Enable browser dual-screen emulation
-### https://aka.ms/foldable/dev-setup
+### [aka.ms/foldable/dev-setup](aka.ms/foldable/dev-setup)
 
 1. `chrome://flags` or `edge://flags`
 2. Enable **Experimental Web Platform features**
@@ -222,10 +421,10 @@ class: impact
 ---
 
 # Android Surface Duo emulator
-### https://aka.ms/foldable/dev-setup
+### [aka.ms/foldable/dev-setup](https://aka.ms/foldable/dev-setup)
 
 .center[
-  .w-50.responsive[![](./images/duo-emu.png)]
+  .w-90.responsive[![](./images/duo-emu.png)]
   ### ⚠️ *Highly recommended!*
 ]
 
@@ -240,6 +439,30 @@ background-image: url(./images/dive.jpg)
 
 - ngx-foldable github page
 - Gallery app source code
+
+---
+
+class: impact
+## .large[About polyfills...]
+
+---
+
+class: contain, small-handle
+background-image: url(./images/polyfills.jpg)
+
+---
+
+class: center
+# Current status
+
+<br>
+
+| Feature | Implementation | Polyfill
+|----------------|:-----------------:|:---:|
+| CSS Spanning | ✅ 🧪 | ✅ |
+| Window Segments | ✅ 🧪 | ✅ |
+| Device Posture | ⛔ | ✅ ✋ |
+| CSS Viewport Window Segments | ⛔ | ⛔ |
 
 ---
 

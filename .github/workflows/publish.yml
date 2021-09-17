@@ -16,6 +16,7 @@ jobs:
     - run: |
         npm ci
         npm link .
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/sinedied/foldable-talk.git
         npm run deploy
       env:
         CI: true

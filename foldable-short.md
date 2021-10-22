@@ -3,7 +3,7 @@ class: animation-fade
 layout: true
 
 .twitter-handle[
-  @sinedied | @olivierleplus
+  @olivierleplus | @sinedied
 ]
 
 <!--
@@ -47,10 +47,9 @@ Celui la c'est pour mon meetup Angular ;)
 ---
 
 class: left, middle, hide-handle, primary, overlay-dark
-background-image: url(./images/duo-banner.jpg)
+background-image: url(./images/brick.jpg)
 
-# .light-text[J'ai plié mon smartphone,<br> et il ne s'est pas cassé...]
-# .alt-text[mais mon app si 😭]
+# .light-text.graf[Developper des applis web pour les .alt-text[foldable] devices]
 
 <!-- .full-layer.light-text.space-left[
   .w-10.responsive[![](./images/ng-nation.png)] Angular Nation
@@ -59,9 +58,9 @@ background-image: url(./images/duo-banner.jpg)
 .full-layer.who.text-right.small.middle.light-text[
   .ms.responsive[![](images/ms-full-logo.svg)]
   |
-  Yohan Lasorsa
-  |
   Olivier Leplus
+  |
+  Yohan Lasorsa
 ]
 
 ???
@@ -76,16 +75,16 @@ class: center, middle, hide-handle
 .table.row.middle.center[
 .col-2[]
 .col-4.center[
-  .w-70.responsive.avatar.bounceInLeft.animated[![](images/photo.jpg)]
-
-  **Yohan Lasorsa**<br>
-  .fab.fa-twitter[] .e[@sinedied]
-]
-.col-4.center[
   .w-70.responsive.avatar.bounceInUp.animated[![](images/olivier.jpg)]
 
   **Olivier Leplus**<br>
   .fab.fa-twitter[] .e[@olivierleplus]
+]
+.col-4.center[
+  .w-70.responsive.avatar.bounceInLeft.animated[![](images/photo.jpg)]
+
+  **Yohan Lasorsa**<br>
+  .fab.fa-twitter[] .e[@sinedied]
 ]
 ]
 
@@ -449,18 +448,20 @@ class: impact
 
 ---
 
+exclude: true
 class: impact
 ## .large[About polyfills...]
 
 ---
 
+exclude: true
 class: contain, small-handle
 background-image: url(./images/polyfills.jpg)
 
 ---
 
 class: center
-# Current status
+# About polyfills...
 
 <br>
 
@@ -490,6 +491,6 @@ alert('Questions?');
 <hr class="hr-right more-space">
 .right.large[
 .large.em-text[{]
-.fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
-.large.em-text[}] .e[@sinedied] .em-text[|] .e[@olivierleplus]
+.fab.fa-twitter[]
+.large.em-text[}] .e[@olivierleplus] .em-text[|] .e[@sinedied]
 ]

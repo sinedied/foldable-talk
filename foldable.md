@@ -47,7 +47,7 @@ background-image: url(images/windows.jpg)
 
 .title-new[
 # .light-text.bit-larger[Building multi-screen experiences]
-.space-top[# .light-text.bit-larger[For the web]]
+.space-top[# .alt-text.bit-larger[For the web]]
 <br>
 ]
 

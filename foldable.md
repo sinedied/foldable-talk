@@ -105,6 +105,7 @@ class: center, middle, hide-handle
 
 ---
 
+exclude: true
 class: center, middle, hide-handle
 # Who are we?
 
@@ -124,7 +125,7 @@ class: center, middle, hide-handle
 ]
 ]
 
-<!-- .large[👉 [aka.ms/foldable-feedback](https://aka.ms/foldable-feedback) 👈] -->
+.large[👉 [aka.ms/foldable-feedback](https://aka.ms/foldable-feedback) 👈]
 
 ---
 

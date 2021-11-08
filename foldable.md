@@ -42,13 +42,13 @@ Vanilla HTML/JS/CSSx
 
 ---
 
-exclude: true
 class: left, hide-handle, middle, overlay-grey
-background-image: url(images/duo-banner.jpg)
+background-image: url(images/windows.jpg)
 
 .title-new[
-# .large.light-text[Multi-screen experiences]
-## For the mobile web
+# .light-text.bit-larger[Building multi-screen experiences]
+.space-top[# .light-text.bit-larger[For the web]]
+<br>
 ]
 
 .full-layer.who.text-right.small.middle.light-text[
@@ -61,6 +61,7 @@ background-image: url(images/duo-banner.jpg)
 
 ---
 
+exclude: true
 class: left, hide-handle
 background-image: url(images/plouf.jpg)
 
@@ -123,7 +124,7 @@ class: center, middle, hide-handle
 ]
 ]
 
-.large[👉 [aka.ms/foldable-feedback](https://aka.ms/foldable-feedback) 👈]
+<!-- .large[👉 [aka.ms/foldable-feedback](https://aka.ms/foldable-feedback) 👈] -->
 
 ---
 
@@ -296,7 +297,15 @@ class: middle, center
 
 ---
 
-class: small-handle, center
+class: full, middle, center, overlay-dark
+background-image: url(./images/experimental.jpg)
+
+# .large[⚠️]
+# Experimental APIs ahead
+
+---
+
+class: small-handle
 # So, media queries it is!
 
 ```css
@@ -309,15 +318,29 @@ class: small-handle, center
   .w-60.responsive[![](./images/spanning-media-query.svg)]
 ]
 
+.full-layer.stick-bottom.space-left[
+.small.no-margin[
+[aka.ms/foldable/css-primitives](https://aka.ms/foldable/css-primitives)<br>[aka.ms/docs/css-primitives](https://aka.ms/docs/css-primitives)
+]
+]
+
 ---
 
-class: impact
-## .large[*After community feedback...*]
+# Environment variables
+
+.center[
+.w-60.responsive[![](./images/css-env-variables.svg)]
+]
+
+---
+
+class: middle, center
+# But... things moves fast
 
 ---
 
 class: small-handle, center
-# Media queries forever
+# New media queries...
 
 .col-6.float-left.space-right[
 ```css
@@ -343,10 +366,18 @@ and
 ]
 ]
 
+--
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.margin-left.left[
+*With new env vars: https://github.com/w3c/csswg-drafts/pull/6474/*
+]
+]
+
 ---
 
 class: small-handle,center
-# Are you crazy ? 😱
+# ...Opening up new possibilities?
 ```css
 @media (horizontal-viewport-segments:2) and @media (vertical-viewport-segments:2);
 ```
@@ -391,19 +422,18 @@ class: impact
 
 ---
 
-# CSS Primitives
-### [aka.ms/foldable/css-primitives](https://aka.ms/foldable/css-primitives)<br>[aka.ms/docs/css-primitives](https://aka.ms/docs/css-primitives)
-
---
-
-.center[
-  .w-70.responsive[![](./images/css-env.png)]
-]
+class: impact
+## .large[What about the JavaScript side?]
 
 ---
 
 # Window Segments API
-### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.text-left.margin-left[
+[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+]
+]
 
 ```js
 const screenSegments = window.getWindowSegments();
@@ -414,7 +444,7 @@ const screenSegments = window.getWindowSegments();
 <br>
 
 .center.large[
-  👆 *But that was before...*
+  👆 *But that was before community feedback...*
 ]
 
 ---
@@ -425,7 +455,12 @@ class: impact
 ---
 
 # Visual Viewport Window Segments API
-### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.text-left.margin-left[
+[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+]
+]
 
 ```js
 const screenSegments = window.visualViewport.segments;
@@ -434,7 +469,12 @@ const screenSegments = window.visualViewport.segments;
 ---
 
 # Visual Viewport Window Segments API
-### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.text-left.margin-left[
+[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+]
+]
 
 ```js
 const screenSegments = window.visualViewport.segments; // => null || DOMRect[]
@@ -454,7 +494,12 @@ if (screenSegments.length > 1) {
 ---
 
 # Visual Viewport Window Segments API
-### [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+
+.full-layer.stick-bottom.space-left[
+.small.no-margin.text-left.margin-left[
+[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+]
+]
 
 ```js
 const screenSegments = window.visualViewport.segments; // => null || DOMRect[]
@@ -474,7 +519,7 @@ if (screenSegments.length > 1) {
 --
 
 .full-layer.text-right.space-right[
-  <div style="height: 10em"></div>
+  <div style="height: 7em"></div>
   .w-20.responsive[![](./images/diff-screens.png)]
 ]
 
@@ -660,7 +705,7 @@ background-image: url(./images/polyfills.jpg)
 ---
 
 class: center
-# Current status
+# Current polyfills status
 
 <br>
 
@@ -676,8 +721,14 @@ class: center
 class: impact
 ## .large[What about some code?]
 
+???
+
+- ngx-foldable github page
+- Gallery app source code
+
 ---
 
+exclude: true
 class: full, middle, center
 background-image: url(./images/dive2.jpg)
 
@@ -697,8 +748,7 @@ class: middle, hide-handle
 const end = {
   message : 'Thank you!',
   slides  : 'bit.ly/foldable-dev',
-  links   : 'aka.ms/foldable-dev',
-  feedback: 'aka.ms/foldable-feedback'
+  links   : 'aka.ms/foldable-dev'
 };
 
 alert('Questions?');

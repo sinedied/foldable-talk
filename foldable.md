@@ -728,8 +728,8 @@ class: impact
 
 ???
 
-- ngx-foldable github page
-- Gallery app source code
+- https://github.com/sinedied/ngx-foldable
+- https://github.dev/sinedied/surface-duo-photo-gallery/blob/css/src/app/app.component.ts source code
 
 ---
 

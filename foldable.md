@@ -264,21 +264,25 @@ background-image: url(./images/new-devices-dual.jpg)
 
 ---
 
+exclude: true
 class: impact
 ## .large.book[What if...]
 
 ---
 
+exclude: true
 class: contain, dark, hide-handle
 background-image: url(./images/dual-first.jpg)
 
 ---
 
+exclude: true
 class: impact
 ## .large.book[Or not.]
 
 ---
 
+exclude: true
 class: impact
 ## .large[Back to now.]
 

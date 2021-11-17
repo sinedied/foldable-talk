@@ -42,6 +42,30 @@ Vanilla HTML/JS/CSSx
 
 ---
 
+class: left, hide-handle, middle, overlay-grey2
+background-image: url(images/broken.jpg)
+
+.title-new[
+# .light-text[J'ai plié mon smartphone et<br>il ne s'est pas cassé...]
+.space-top[# .alt-text.bit-larger[...mais mon app si 🙁]]
+<br>
+]
+
+.full-layer.bottom.space-left[
+.w-15.responsive[![](./images/ces-logo.svg)]
+]
+
+.full-layer.who.text-right.small.middle.light-text[
+  .ms.responsive[![](images/ms-full-logo.svg)]
+  |
+  Yohan Lasorsa
+  |
+  Olivier Leplus
+]
+
+---
+
+exclude: true
 class: left, hide-handle, middle, overlay-grey
 background-image: url(images/windows.jpg)
 
@@ -451,11 +475,6 @@ const screenSegments = window.getWindowSegments();
 .center.large[
   👆 *But that was before community feedback...*
 ]
-
----
-
-class: impact
-## .large[*After community feedback...*]
 
 ---
 

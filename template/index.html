@@ -5,9 +5,10 @@
   <title>{{title}}</title>
   {{{style}}}
   <script src="remark.min.js"></script>
+  <script src="sync.js"></script>
   <script>
     function create() {
-      var slideshow = remark.create({
+      let slideshow = remark.create({
         {{{source}}},
         ratio: '16:9',
         highlightLines: true,
@@ -23,6 +24,7 @@
           video.play();
         }
       });
+      initSync(slideshow);
       return slideshow;
     }
   </script>

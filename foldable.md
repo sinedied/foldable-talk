@@ -1,4 +1,4 @@
-title: Les web apps multi écran, c'est pas sec... mais on s'est jeté à l'eau
+title: Create multi-screen experiences for the new mobile web
 class: animation-fade
 layout: true
 

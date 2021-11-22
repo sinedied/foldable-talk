@@ -408,7 +408,7 @@ env(viewport-segment-right <x> <y>);
 ```
 
 .center[
-.w-50.responsive[![](./images/env-grid.png)]
+.w-60.responsive[![](./images/env-grid.png)]
 ]
 
 ---

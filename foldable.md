@@ -42,6 +42,7 @@ Vanilla HTML/JS/CSSx
 
 ---
 
+exclude: true
 class: left, hide-handle, middle, overlay-grey2
 background-image: url(images/broken.jpg)
 
@@ -65,14 +66,17 @@ background-image: url(images/broken.jpg)
 
 ---
 
-exclude: true
 class: left, hide-handle, middle, overlay-grey
 background-image: url(images/windows.jpg)
 
 .title-new[
-# .light-text.bit-larger[Building multi-screen experiences]
-.space-top[# .alt-text.bit-larger[For the web]]
+# .light-text.bit-larger[Create multi-screen experiences]
+.space-top[# .alt-text.bit-larger[For the new mobile web]]
 <br>
+]
+
+.full-layer.bottom.space-left[
+.w-15.responsive[![](./images/devday-logo.png)]
 ]
 
 .full-layer.who.text-right.small.middle.light-text[
@@ -365,6 +369,9 @@ class: small-handle
 
 class: middle, center
 # But... things moves fast
+--
+
+### (Like, really fast. We literaly updated everything yesterday 😅)
 
 ---
 
@@ -605,7 +612,7 @@ navigator.devicePosture.addEventListener("change", () => {
 ```
 
 ```css
-@media (device-posture: laptop) and (screen-spanning: single-fold-horizontal) {
+@media (device-posture: laptop) and (vertical-viewport-segments:2) {
   /* Where the magic happens! */
 }
 ```
@@ -735,10 +742,11 @@ class: center
 
 | Feature | Implementation | Polyfill
 |----------------|:-----------------:|:---:|
-| CSS Spanning | ✅ 🧪 | ✅ |
-| Window Segments | ✅ 🧪 | ✅ |
-| Device Posture | ⛔ | ✅ ✋ |
-| CSS Viewport Window Segments | ⛔ | ⛔ |
+| CSS Spanning | ⛔ 🚮 | ✅ |
+| Window Segments (old) | ⛔ 🚮 | ✅ |
+| Device Posture | ✅ 🧪 | ✅ ✋ |
+| CSS Viewport Window Segments | ✅ 🧪 | ⛔ |
+| Window Segments (new) | ✅ 🧪 | ⛔ |
 
 ---
 

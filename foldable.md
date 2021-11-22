@@ -359,14 +359,6 @@ class: small-handle
 
 ---
 
-# Environment variables
-
-.center[
-.w-60.responsive[![](./images/css-env-variables.svg)]
-]
-
----
-
 class: middle, center
 # But... things moves fast
 --
@@ -375,7 +367,7 @@ class: middle, center
 
 ---
 
-class: small-handle, center
+class: small-handle
 # New media queries...
 
 .col-6.float-left.space-right[
@@ -402,28 +394,39 @@ and
 ]
 ]
 
---
+---
 
-.full-layer.stick-bottom.space-left[
-.small.no-margin.margin-left.left[
-*With new env vars: https://github.com/w3c/csswg-drafts/pull/6474/*
-]
+# New environment variables...
+
+```css
+env(viewport-segment-width <x> <y>);
+env(viewport-segment-height <x> <y>);
+env(viewport-segment-top <x> <y>);
+env(viewport-segment-left <x> <y>);
+env(viewport-segment-bottom <x> <y>);
+env(viewport-segment-right <x> <y>);
+```
+
+.center[
+.w-50.responsive[![](./images/env-grid.png)]
 ]
 
 ---
 
-class: small-handle,center
+class: small-handle
 # ...Opening up new possibilities?
 ```css
 @media (horizontal-viewport-segments:2) and @media (vertical-viewport-segments:2);
 ```
 
 --
+.center.no-margin[
   .w-30.responsive[![](./images/crazy-1.png)]
-  <br />
+]
 --
+.center.no-margin[
   .w-30.up.responsive[![](./images/crazy-2.png)]
-
+]
 ---
 
 class: impact

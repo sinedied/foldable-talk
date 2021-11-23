@@ -367,7 +367,7 @@ class: middle, center
 
 ---
 
-class: small-handle
+class: small-handle, center
 # New media queries...
 
 .col-6.float-left.space-right[
@@ -396,24 +396,8 @@ and
 
 ---
 
-# New environment variables...
+class: small-handle, center
 
-```css
-env(viewport-segment-width <x> <y>);
-env(viewport-segment-height <x> <y>);
-env(viewport-segment-top <x> <y>);
-env(viewport-segment-left <x> <y>);
-env(viewport-segment-bottom <x> <y>);
-env(viewport-segment-right <x> <y>);
-```
-
-.center[
-.w-60.responsive[![](./images/env-grid.png)]
-]
-
----
-
-class: small-handle
 # ...Opening up new possibilities?
 ```css
 @media (horizontal-viewport-segments:2) and @media (vertical-viewport-segments:2);
@@ -427,6 +411,7 @@ class: small-handle
 .center.no-margin[
   .w-30.up.responsive[![](./images/crazy-2.png)]
 ]
+
 ---
 
 class: impact
@@ -457,6 +442,23 @@ class: impact
 
 .center[
   .responsive[![](./images/screens-list-2-answer.png)]
+]
+
+---
+
+# Environment variables
+
+```css
+env(viewport-segment-width <x> <y>);
+env(viewport-segment-height <x> <y>);
+env(viewport-segment-top <x> <y>);
+env(viewport-segment-left <x> <y>);
+env(viewport-segment-bottom <x> <y>);
+env(viewport-segment-right <x> <y>);
+```
+
+.center[
+.w-60.responsive[![](./images/env-grid.png)]
 ]
 
 ---

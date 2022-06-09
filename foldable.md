@@ -42,7 +42,6 @@ Vanilla HTML/JS/CSSx
 
 ---
 
-exclude: true
 class: left, hide-handle, middle, overlay-grey2
 background-image: url(images/broken.jpg)
 
@@ -53,7 +52,7 @@ background-image: url(images/broken.jpg)
 ]
 
 .full-layer.bottom.space-left[
-.w-15.responsive[![](./images/ces-logo.svg)]
+.w-20.responsive[![](./images/camping-logo.png)]
 ]
 
 .full-layer.who.text-right.small.middle.light-text[
@@ -66,6 +65,7 @@ background-image: url(images/broken.jpg)
 
 ---
 
+exclude: true
 class: left, hide-handle, middle, overlay-grey
 background-image: url(images/windows.jpg)
 
@@ -338,6 +338,14 @@ background-image: url(./images/experimental.jpg)
 
 ---
 
+class: full, middle, center, overlay-dark
+background-image: url(./images/experimental.jpg)
+
+# .large[⚠️]
+# ~~Experimental APIs ahead~~
+
+---
+
 class: small-handle
 # So, media queries it is!
 
@@ -363,7 +371,7 @@ class: middle, center
 # But... things moves fast
 --
 
-### (Like, really fast. We literaly updated everything yesterday 😅)
+### (Like, really fast. We updated the slides today 😅)
 
 ---
 
@@ -706,16 +714,18 @@ class: impact
 
 ---
 
+class: hide-handle
+
 # Enable browser dual-screen emulation
 ### [aka.ms/foldable/dev-setup](https://aka.ms/foldable/dev-setup)
 
-1. `chrome://flags` or `edge://flags`
-2. Enable **Experimental Web Platform features**
-3. Open dev tools settings
-4. In **Experiments** tab, tick **Emulation: Support dual screen mode**
+1. Open dev tools settings
+2. In **Experiments** tab, tick **Emulation: Support dual screen mode**
+3. Enable **Device emulation** in dev Tools
+
 
 .center[
-  .w-70.responsive[![](./images/edge-flags.png)]
+  .w-70.responsive[![](./images/devtools.png)]
 ]
 
 ---
@@ -750,8 +760,8 @@ class: center
 | CSS Spanning | ⛔ 🚮 | ✅ |
 | Window Segments (old) | ⛔ 🚮 | ✅ |
 | Device Posture | ✅ 🧪 | ✅ ✋ |
-| CSS Viewport Window Segments | ✅ 🧪 | ⛔ |
-| Window Segments (new) | ✅ 🧪 | ⛔ |
+| **CSS Viewport Window Segments** | ✅ 🎉 | ⛔ |
+| **Window Segments (new)** | ✅ 🎉 | ⛔ |
 
 ---
 

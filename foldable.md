@@ -348,6 +348,7 @@ background-image: url(./images/experimental.jpg)
 
 ---
 
+exclude: true
 class: small-handle
 # So, media queries it is!
 
@@ -369,10 +370,12 @@ class: small-handle
 
 ---
 
+exclude: true
 class: middle, center
 # But... things moves fast
 --
 
+exclude: true
 ### (Like, really fast. We updated the slides today 😅)
 
 ---
@@ -478,6 +481,7 @@ class: impact
 
 ---
 
+exclude: true
 # Window Segments API
 
 .full-layer.stick-bottom.space-left[
@@ -490,13 +494,13 @@ class: impact
 const screenSegments = window.getWindowSegments();
 ```
 
---
+<!-- --
 
 <br>
 
 .center.large[
   👆 *But that was before community feedback...*
-]
+] -->
 
 ---
 
@@ -571,6 +575,7 @@ if (screenSegments.length > 1) {
 
 ---
 
+exclude: true
 # .small[`window.visualViewport.segments` is immutable]
 
 .no-margin[
@@ -649,11 +654,13 @@ class: impact, alt
 
 ---
 
+exclude: true
 class: impact
 ## .larger[What about UI/UX?]
 
 ---
 
+exclude: true
 class: middle, center
 # Design patterns? 🤔
 
@@ -662,6 +669,7 @@ Quelles sont vos idées?
 
 ---
 
+exclude: true
 class: center
 # List / details
 
@@ -671,6 +679,7 @@ class: center
 
 ---
 
+exclude: true
 class: center
 # Companion pane
 
@@ -687,6 +696,7 @@ Twitch + comments, keyboard...
 
 ---
 
+exclude: true
 class: center
 # Dual view
 
@@ -699,6 +709,7 @@ Batteleship (Mine+yours), Mario kart (main+map)
 
 ---
 
+exclude: true
 class: center
 # Dual view interaction
 

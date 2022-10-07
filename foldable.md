@@ -42,6 +42,7 @@ Vanilla HTML/JS/CSSx
 
 ---
 
+exclude: true
 class: left, hide-handle, middle, overlay-grey2
 background-image: url(images/broken.jpg)
 
@@ -65,7 +66,6 @@ background-image: url(images/broken.jpg)
 
 ---
 
-exclude: true
 class: left, hide-handle, middle, overlay-grey
 background-image: url(images/windows.jpg)
 
@@ -76,13 +76,15 @@ background-image: url(images/windows.jpg)
 ]
 
 .full-layer.bottom.space-left[
-.w-15.responsive[![](./images/devday-logo.png)]
+.w-25.responsive[![](./images/devoxx-logo-white.png)]
 ]
 
-.full-layer.who.text-right.small.middle.light-text[
+.full-layer.who.text-right.small.middle.light-text[ 
   .ms.responsive[![](images/ms-full-logo.svg)]
   |
   Yohan Lasorsa
+
+ .aws.responsive[![](images/aws.svg)]
   |
   Olivier Leplus
 ]
@@ -740,16 +742,19 @@ class: hide-handle
 
 ---
 
+exclude: true
 class: impact
 ## .large[About polyfills...]
 
 ---
 
+exclude: true
 class: contain, small-handle
 background-image: url(./images/polyfills.jpg)
 
 ---
 
+exclude: true
 class: center
 # Current polyfills status
 

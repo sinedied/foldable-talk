@@ -852,8 +852,14 @@ hr {
 
 .ms {
   display: inline-block;
-  width: 25%;
+  width: 40%;
   margin-top: -.35em;
+}
+
+.aws {
+  display: inline-block;
+  width: 18%;
+  // margin-top: -.35em;
 }
 
 .twitter-handle {
@@ -879,6 +885,8 @@ hr {
   p {
     float: right;
     margin-right: 1em;
+    width: 320px;
+    margin-bottom: .9em;
   }
 }
 

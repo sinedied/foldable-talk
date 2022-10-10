@@ -332,6 +332,7 @@ class: middle, center
 
 ---
 
+exclude: true
 class: full, middle, center, overlay-dark
 background-image: url(./images/experimental.jpg)
 
@@ -340,6 +341,7 @@ background-image: url(./images/experimental.jpg)
 
 ---
 
+exclude: true
 class: full, middle, center, overlay-dark
 background-image: url(./images/experimental.jpg)
 

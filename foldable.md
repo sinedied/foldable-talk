@@ -811,8 +811,8 @@ class: middle, hide-handle
 ```js
 const end = {
   message : 'Thank you!',
-  slides  : 'bit.ly/foldable-dev',
-  links   : 'aka.ms/foldable-dev'
+  slides  : 'bit.ly/foldabledev',
+  links   : 'aka.ms/foldabledev'
 };
 
 alert('Questions?');

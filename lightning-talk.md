@@ -49,14 +49,14 @@ Celui la c'est pour mon meetup Angular ;)
 class: left, middle, hide-handle, primary, overlay-dark
 background-image: url(./images/duo-banner.jpg)
 
-# .light-text[J'ai plié mon smartphone et il ne s'est pas cassé... mais mon app si :(]
+# .light-text[Building multi-screen experiences for the mobile web]
 
 <!-- .full-layer.light-text.space-left[
   .w-10.responsive[![](./images/ng-nation.png)] Angular Nation
 ] -->
 
 .full-layer.who.text-right.small.middle.light-text[
-  .ms.responsive[![](images/ms-full-logo.svg)]
+  .ms.responsive[![](images/aws-white.png)]
   |
   Olivier Leplus
   |
@@ -78,7 +78,7 @@ class: middle, center, hide-handle
 ]
 .col-8.bit-larger.left[
   .e[Olivier Leplus]<br>
-  .bit-larger[\[ DevRel - .mini-img[![](images/ms.png) Microsoft] \]]<br>
+  .bit-larger[\[ Developer Advocate - .mini-img[![](images/aws.png)] \]]<br>
   .small.em-text[GDE Web, Geek, Community lover]<br>
 ]
 ]
@@ -161,6 +161,7 @@ background-image: url(./images/experimental.jpg)
 
 ---
 
+<!-- 
 # So, media queries it is!
 
 ```css
@@ -179,23 +180,23 @@ background-image: url(./images/experimental.jpg)
 ]
 ]
 
----
-
+--->
+<!-- 
 # Environment variables
 
 .center[
 .w-60.responsive[![](./images/css-env-variables.svg)]
 ]
 
----
-
+--->
+<!-- 
 class: middle, center
 # But... things moves fast
 
----
+--- 
+-->
 
-class: small-handle, center
-# New media queries...
+# So, media queries it is!
 
 .col-6.float-left.space-right[
 ```css
@@ -223,12 +224,6 @@ and
 
 --
 
-.full-layer.stick-bottom.space-left[
-.small.no-margin.margin-left[
-*With new env vars soon: https://github.com/w3c/csswg-drafts/pull/6474/*
-]
-]
-
 ---
 
 class: small-handle,center
@@ -243,13 +238,64 @@ class: small-handle,center
 --
   .w-30.up.responsive[![](./images/crazy-2.png)]
 
+
+---
+
+class: impact
+## .large[Let's play a game]
+
+---
+
+```css
+@media (horizontal-viewport-segments: 2) {
+  body { 
+    background-color: yellow; 
+  }
+}
+```
+.center[
+.responsive[![](./images/screens-list-2.png)]
+]
+
+---
+
+```css
+@media (horizontal-viewport-segments: 2) {
+  body { 
+    background-color: yellow; 
+  }
+}
+```
+
+.center[
+  .responsive[![](./images/screens-list-2-answer.png)]
+]
+
+---
+
+
+# Environment variables
+
+```css
+env(viewport-segment-width <x> <y>);
+env(viewport-segment-height <x> <y>);
+env(viewport-segment-top <x> <y>);
+env(viewport-segment-left <x> <y>);
+env(viewport-segment-bottom <x> <y>);
+env(viewport-segment-right <x> <y>);
+```
+
+.center[
+.w-60.responsive[![](./images/env-grid.png)]
+]
+
 ---
 
 class: impact
 ## .large[What about the JavaScript side?]
 
 ---
-
+<!-- 
 # Window Segments API
 
 .full-layer.stick-bottom.space-left[
@@ -257,47 +303,48 @@ class: impact
 [aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
 ]
 ]
-
+https://bit.ly/segments-explainer
 ```js
 const screenSegments = window.getWindowSegments();
 ```
 
---
-
+-->
+<!-- 
 <br>
 
 .center.large[
   👆 *But that was before community feedback...*
 ]
 
----
+--->
 
 # Visual Viewport Window Segments API
 
 .full-layer.stick-bottom.space-left[
-.small.no-margin.text-left.margin-left[
-[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+.small.no-margin.margin-left[
+*Explainer: https://bit.ly/segments-explainer*
 ]
 ]
 
+
 ```js
-const screenSegments = window.visualViewport.segments;
+const segments = window.visualViewport.segments;
 ```
 
+
 ---
 
 # Visual Viewport Window Segments API
 
 .full-layer.stick-bottom.space-left[
-.small.no-margin.text-left.margin-left[
-[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+.small.no-margin.margin-left[
+*Explainer: https://bit.ly/segments-explainer*
 ]
 ]
-
 ```js
-const screenSegments = window.visualViewport.segments; // => null || DOMRect[]
+const segments = window.visualViewport.segments; // => null || DOMRect[]
 
-if (screenSegments.length > 1) {
+if (segments && segments.length > 1) {
   // It's a foldable device !
 
 
@@ -314,22 +361,22 @@ if (screenSegments.length > 1) {
 # Visual Viewport Window Segments API
 
 .full-layer.stick-bottom.space-left[
-.small.no-margin.text-left.margin-left[
-[aka.ms/foldable/window-segments](https://aka.ms/foldable/window-segments)<br>[aka.ms/docs/window-segments](https://aka.ms/docs/window-segments)
+.small.no-margin.margin-left[
+*Explainer: https://bit.ly/segments-explainer*
 ]
 ]
 
 ```js
-const screenSegments = window.visualViewport.segments; // => null || DOMRect[]
+const segments = window.visualViewport.segments; // => null || DOMRect[]
 
-if (screenSegments.length > 1) {
+if (segments && segments.length > 1) {
   // It's a foldable device !
-  for (let i = 0; i < screenSegments.length; i++) {
+  for (let i = 0; i < segments.length; i++) {
     console.log(`Screen segment ${i}:`);
-    console.log('- width   : ' + screenSegments[i].width);
-    console.log('- height  : ' + screenSegments[i].height);
-    console.log('- x origin: ' + screenSegments[i].x);
-    console.log('- y origin: ' + screenSegments[i].y);
+    console.log('- width   : ' + segments[i].width);
+    console.log('- height  : ' + segments[i].height);
+    console.log('- x origin: ' + segments[i].x);
+    console.log('- y origin: ' + segments[i].y);
   }
 }
 ```
@@ -378,7 +425,7 @@ navigator.devicePosture.addEventListener("change", () => {
 ```
 
 ```css
-@media (device-posture: laptop) and (screen-spanning: single-fold-horizontal) {
+@media (device-posture: laptop) and (vertical-viewport-segments: 2) {
   /* Where the magic happens! */
 }
 ```
@@ -429,38 +476,12 @@ class: impact
 
 ---
 
-
-class: impact
-## .large[About polyfills...]
-
----
-
-class: contain, small-handle
-background-image: url(./images/polyfills.jpg)
-
----
-
-class: center
-# Current status
-
-<br>
-
-| Feature | Implementation | Polyfill
-|----------------|:-----------------:|:---:|
-| CSS Spanning | ✅ 🧪 | ✅ |
-| Window Segments | ✅ 🧪 | ✅ |
-| Device Posture | ⛔ | ✅ ✋ |
-| CSS Viewport Window Segments | ⛔ | ⛔ |
-
----
-
 class: middle, hide-handle
 
 .big-text.no-bg.baseline[
 ```js
 const end = {
   message: 'Thank you!',
-  slides : 'aka.ms/talk-foldable',
   links  : 'aka.ms/ngx-foldable'
 };
 

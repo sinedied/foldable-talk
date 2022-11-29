@@ -980,6 +980,10 @@ hr {
   &.bit-smaller { font-size: 2.6em; }
 }
 
+.hue-rotate {
+  filter: hue-rotate(20deg)brightness(150%);
+}
+
 // Fix PDF print with chrome
 // ---------------------------------------------------------------------------
 

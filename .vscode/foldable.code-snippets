@@ -27,7 +27,7 @@
 	},
 	"foldable-horizontal": {
 		"prefix": "foldable-horizontal",
-		"body": "@media (horizontal-viewport-segments:2) {\n}",
+		"body": "@media (horizontal-viewport-segments:2) {\n\n}",
 		"scope": "css"
 	},
 	"foldable-h-blue": {

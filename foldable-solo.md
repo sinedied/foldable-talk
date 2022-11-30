@@ -709,7 +709,7 @@ class: impact
 # Enable browser dual-screen emulation
 ### [aka.ms/foldable/dev-setup](https://aka.ms/foldable/dev-setup)
 
-1. `chrome://flags` or `edge://flags`
+1. Open `chrome://flags` or `edge://flags`
 2. Enable **Experimental Web Platform features**
 3. Open dev tools settings
 4. In **Experiments** tab, tick **Emulation: Support dual screen mode**

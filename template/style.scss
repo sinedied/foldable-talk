@@ -56,7 +56,7 @@ li { margin-bottom: .25em };
 pre, code {
   text-align: left;
   font-family: $font-fixed;
-  color: $secondary;
+  color: $primary;
   background: $code-background;
   white-space: pre-wrap;
   .full &, .impact &, .no-bg & { background: transparent !important; }

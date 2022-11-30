@@ -42,7 +42,6 @@ Vanilla HTML/JS/CSSx
 
 ---
 
-exclude: true
 class: left, hide-handle, middle, overlay-grey2
 background-image: url(images/broken.jpg)
 
@@ -53,19 +52,18 @@ background-image: url(images/broken.jpg)
 ]
 
 .full-layer.bottom.space-left[
-.w-20.responsive[![](./images/camping-logo.png)]
+.w-15.responsive.hue-rotate.img-shadow[![](./images/devfest-dijon-light.png)]
 ]
 
 .full-layer.who.text-right.small.middle.light-text[
   .ms.responsive[![](images/ms-full-logo.svg)]
   |
   Yohan Lasorsa
-  |
-  Olivier Leplus
 ]
 
 ---
 
+exclude: true
 class: left, hide-handle, middle, overlay-grey
 background-image: url(images/windows.jpg)
 

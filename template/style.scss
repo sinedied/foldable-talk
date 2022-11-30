@@ -327,7 +327,7 @@ table {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right, rgba(255, 0, 195, 0.589), transparent);
+    background: linear-gradient(to right, transparentize(#013, .1), transparent);
     z-index: -1;
   }
 }
@@ -978,6 +978,10 @@ hr {
 
   &.small { font-size: 1.6em; }
   &.bit-smaller { font-size: 2.6em; }
+}
+
+.img-shadow img {
+  filter: drop-shadow(0 0 0.5em rgba(0,0,0,.6));
 }
 
 .hue-rotate {

@@ -733,10 +733,10 @@ class: hide-handle
 # Enable browser dual-screen emulation
 ### [aka.ms/foldable/dev-setup](https://aka.ms/foldable/dev-setup)
 
-1. Open dev tools settings
-2. In **Experiments** tab, tick **Emulation: Support dual screen mode**
-3. Enable **Device emulation** in dev Tools
-
+1. `chrome://flags` or `edge://flags`
+2. Enable **Experimental Web Platform features**
+3. Open dev tools settings
+4. In **Experiments** tab, tick **Emulation: Support dual screen mode**
 
 .center[
   .w-70.responsive[![](./images/devtools.png)]

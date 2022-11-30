@@ -91,40 +91,24 @@ background-image: url(images/windows.jpg)
 
 ---
 
-exclude: true
-class: left, hide-handle
-background-image: url(images/plouf.jpg)
 
-.title[
-# .large.light-text[Les web apps multi-écrans]
-## C'est pas sec... mais on s'est jeté à l'eau!
-]
+class: middle, center, hide-handle
+# .large[Who am I?]
 
-.full-layer.who.text-right.small.middle.light-text[
-  .ms.responsive[![](images/ms-full-logo.svg)]
-  |
-  Yohan Lasorsa
-  |
-  Olivier Leplus
-]
-
-.full-layer.text-left.full-bottom.stick-left.no-margin[
-  .w-40.responsive[![](./images/rivieradev.svg)]
-]
-
----
-
-class: center, middle, hide-handle
-# Who am I?
-
-.table.row.middle.center[
-.col-2[]
+.table.row.middle[
 .col-4.center[
-  .w-70.responsive.avatar.bounceInLeft.animated[![](images/photo.jpg)]
-
-  **Yohan Lasorsa**<br>
-  .fab.fa-twitter[] .e[@sinedied]
+  .w-70.responsive.avatar.tada.animated[![](images/photo.jpg)]
 ]
+.col-8.bit-larger.left[
+  .e[Yohan Lasorsa]<br>
+  .bit-larger[\[ Cloud Developer Advocate .mini-img[![](images/ms.png)] \]]<br>
+  .small.em-text[Web tech geek, OSS maintainer, DIY lover]<br>
+]
+]
+.center.bit-larger[
+.large.em-text[{]
+.fab.fa-twitter[] .fab.fa-github[] .fab.fa-dev[]
+.large.em-text[}] .e[@sinedied]<br>
 ]
 
 ---
@@ -722,18 +706,16 @@ class: impact
 
 ---
 
-class: hide-handle
-
 # Enable browser dual-screen emulation
 ### [aka.ms/foldable/dev-setup](https://aka.ms/foldable/dev-setup)
 
-1. Open dev tools settings
-2. In **Experiments** tab, tick **Emulation: Support dual screen mode**
-3. Enable **Device emulation** in dev Tools
-
+1. `chrome://flags` or `edge://flags`
+2. Enable **Experimental Web Platform features**
+3. Open dev tools settings
+4. In **Experiments** tab, tick **Emulation: Support dual screen mode**
 
 .center[
-  .w-70.responsive[![](./images/devtools.png)]
+  .w-60.responsive[![](./images/devtools.png)]
 ]
 
 ---

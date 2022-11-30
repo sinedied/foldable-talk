@@ -5,7 +5,8 @@
   "scripts": {
     "start": "bs s",
     "predeploy": "rm -rf dist && bs export --web foldable-solo.md && bs export --web lightning-talk.md -o dist/ol && bs export --web meetup-yohan.md -o dist/yl && bs export --web foldable-short.md -o dist/s",
-    "deploy": "gh-pages -d dist -u \"sinedied <node@free.fr>\""
+    "deploy": "gh-pages -d dist -u \"sinedied <node@free.fr>\"",
+    "demo": "npx -y lite-server --baseDir=demo"
   },
   "dependencies": {
     "backslide": "^3.0.0"

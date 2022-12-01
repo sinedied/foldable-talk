@@ -100,7 +100,7 @@ class: middle, center, hide-handle
 .col-8.bit-larger.left[
   .e[Yohan Lasorsa]<br>
   .bit-larger[\[ Cloud Developer Advocate .mini-img[![](images/ms.png)] \]]<br>
-  .small.em-text[Web tech geek, OSS maintainer, DIY lover]<br>
+  .small.em-text[GDE for Angular, OSS maintainer, Web tech geek]<br>
 ]
 ]
 .center.bit-larger[
